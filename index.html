@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+<div class="container">
+  <div id="stars"></div>
+  <div id="stars2"></div>
+  <div id="stars3"></div>
+  <div> <section class="card" id="card">
+    <form id="form">
+      <h1>Welcome</h1>
+      <p class="lede">Create your account to get the sky report.</p>
+
+      <div class="field">
+        <input id="name" name="name" type="text" placeholder=" " required autocomplete="name">
+        <label for="name">Your name</label>
+      </div>
+
+      <div class="field">
+        <input id="email" name="email" type="email" placeholder=" " required autocomplete="email">
+        <label for="email">Email address</label>
+      </div>
+
+      <div class="field has-eye">
+        <input id="pw" name="password" type="password" placeholder=" " required minlength="8"
+               autocomplete="new-password" aria-describedby="hint">
+        <label for="pw">Password</label>
+        <button type="button" class="eye" id="eye" aria-pressed="false">Show</button>
+      </div>
+
+      <div class="meter" id="meter" data-s="0" aria-hidden="true">
+        <i></i><i></i><i></i><i></i>
+      </div>
+      <p class="hint" id="hint" aria-live="polite">Use 8 or more characters</p>
+
+      <button class="btn" type="submit">Create my account</button>
+    </form>
+
+    <div class="success" role="status">
+      <svg viewBox="0 0 72 72" aria-hidden="true">
+        <circle cx="36" cy="36" r="30"/>
+        <path d="M24 37l8 8 16-17"/>
+      </svg>
+      <h2>You're on the list</h2>
+      <p>Check your inbox to confirm your email address.</p>
+    </div>
+  </section></div>
+</div>
+
+  
+</body>
+</html>
